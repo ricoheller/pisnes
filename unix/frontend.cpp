@@ -313,8 +313,6 @@ static uint32 fe_ReadJoypad (int which1)
 	if (keyssnes[sfc_key[LEFT_1]] == SDL_PRESSED || joy_axes[joyaxis_LR] == LEFT)	val |= SNES_LEFT_MASK;
 	if (keyssnes[sfc_key[RIGHT_1]] == SDL_PRESSED || joy_axes[joyaxis_LR] == RIGHT)	val |= SNES_RIGHT_MASK;
 
-	if (keyssnes[sfc_key[QUIT]] == SDL_PRESSED || joy_buttons[sfc_joy[QUIT]]) fe_exit();
-
 	if (val&SNES_SELECT_MASK && val&SNES_START_MASK) fe_exit();
 
 	return(val);
