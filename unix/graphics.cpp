@@ -144,16 +144,6 @@ void S9xInitDisplay (int height)
 
             //Check for valid joystick, some keyboards
             //aren't SDL compatible
-            if(joy[i])
-            {
-                if (SDL_JoystickNumAxes(joy[i]) > 6)
-                {
-                    SDL_JoystickClose(joy[i]);
-                    joy[i]=0;
-                    printf("Error detected invalid joystick/keyboard\n");
-                    break;
-                }
-            }
 			if(i==1) break;		//Only need two joysticks
         }
     }
