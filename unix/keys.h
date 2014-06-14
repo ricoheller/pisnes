@@ -27,3 +27,8 @@
 #define RPI_JOY_ACCEL	7
 #define RPI_JOY_QLOAD	10
 #define RPI_JOY_QSAVE	11
+
+#define RPI_JOY_UP      16
+#define RPI_JOY_DOWN    17
+#define RPI_JOY_LEFT    18
+#define RPI_JOY_RIGHT   19
