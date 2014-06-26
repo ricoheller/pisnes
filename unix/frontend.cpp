@@ -464,7 +464,7 @@ static void select_game(char *game)
 			}
 
 			//Game selected
-			if(Joypads & SNES_START_MASK || Joypads & SNES_B_MASK) break;
+			if(Joypads & SNES_B_MASK) break;
 
 			//Used to delay the initial key press, but 
 			//once pressed and held the delay will clear
@@ -485,7 +485,7 @@ static void select_game(char *game)
 			if(Joypads & SNES_RIGHT_MASK) last_game_selected+=21;
 		}
 
-		if(Joypads & SNES_START_MASK || Joypads & SNES_B_MASK)
+		if(Joypads & SNES_B_MASK)
 		{
 			/* Select the game */
 			game_list_select(last_game_selected, game);
