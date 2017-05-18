@@ -27,6 +27,11 @@
 #define RU_2 26
 #define RD_2 27
 
+#define JB_UP 16
+#define JB_DOWN 17
+#define JB_LEFT 18
+#define JB_RIGHT 19
+
 #define ACCEL 50
 #define QUIT 51
 #define HELP 52
